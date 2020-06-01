@@ -1,4 +1,18 @@
-/* eslint-disable */
+/* ============
+ * Main File
+ * ============
+ *
+ * Will initialize the application.
+ */
+
+import Vue from 'vue';
+
+/* ============
+ * Plugins
+ * ============
+ *
+ * Import and bootstrap the plugins.
+ */
 
 import './plugins/vuex';
 import './plugins/axios';
@@ -25,12 +39,7 @@ import './plugins/register-service-worker';
  * http://stylus-lang.com/
  */
 
-// import './assets/stylus/app.styl';
-import './assets/style/style.css';
-
-
-import '@fortawesome/fontawesome-free/css/all.css';
-import '@fortawesome/fontawesome-free/js/all.js';
+import './assets/stylus/app.styl';
 
 /* ============
  * Main App
@@ -42,19 +51,9 @@ import '@fortawesome/fontawesome-free/js/all.js';
 import App from './App.vue';
 import store from './store';
 
-
-/* ============
- * Main File
- * ============
- *
- * Will initialize the application.
- */
-
-import Vue from 'vue';
-import BootstrapVue from 'bootstrap-vue'
-Vue.use(BootstrapVue)
 Vue.config.productionTip = false;
 
+store.dispatch('auth/check');
 
 /* eslint-disable no-new */
 new Vue({

@@ -2,7 +2,7 @@
   "name": "vue-2-boilerplate",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vue-cli-service serve",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test": "vue-cli-service test",
     "e2e": "vue-cli-service e2e",
@@ -10,19 +10,16 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "bootstrap": "^4.1.1",
-    "bootstrap-vue": "^2.15.0",
+    "bootstrap": "4.1.1",
     "font-awesome": "^4.7.0",
     "register-service-worker": "^1.0.0",
-    "vue": "^2.6.11",
-    "vue-fixed-header": "^3.2.14",
+    "vue": "^2.5.13",
     "vue-i18n": "^8.0.0",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1",
     "vuex-router-sync": "^5.0.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.0",
     "@vue/cli-plugin-babel": "^3.0.0",
     "@vue/cli-plugin-e2e-nightwatch": "^3.0.0",
     "@vue/cli-plugin-eslint": "^3.0.0",

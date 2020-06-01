@@ -6,6 +6,7 @@
  */
 
 export default {
-  commentTable: {},
-  childTable: {},
+  email: null,
+  firstName: null,
+  lastName: null,
 };
