@@ -1,5 +1,6 @@
 <template>
-  <div id="app">
+  <div id="app" >
+    <v-header/>
     <router-view/>
   </div>
 </template>
@@ -10,22 +11,21 @@
  *
  * The entry point of the application.
  */
+import VHeader from '@/layouts/Header.vue';
 
 export default {
   /**
    * The name of the application.
    */
-  name: 'VueBoilerplate',
+  name: 'FacebookMock',
 
-  /**
-   * Fires when the app has been mounted.
-   */
+  components: {
+    VHeader,
+  },
   mounted() {
-    // If the user is authenticated,
-    // fetch the data from the API
-    if (this.$store.state.auth.authenticated) {
-      this.$store.dispatch('account/find');
-    }
   },
 };
 </script>
+
+<style scoped>
+</style>
